@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+#left-hand {
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+ul {
+    list-style-type: none;
+}
+
+/* Left Hand Frame */
+.topMenu {
+    background-color: yellow;
+    padding: 0;
+}
+.topMenu > li {
+    display: inline-block;
+    position: relative;
+}
+.topMenu > li > a {
+    display: grid;
+    grid-template-columns: 150px;
+    color: black;
+    padding: 20px 5px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+}
+.topMenu > li > a:hover {
+    color: green;
+}
+.topMenu > li > ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: orange;
+}
+.topMenu > li:hover > ul {
+    display: grid;
+}
+.topMenu > li > ul > li {
+    padding: 20px 0px;
+    text-align: center;
+}
+.topMenu > li > ul > li > a {
+    color: #000;
+    font-size: 13px;
+}
+.topMenu > li > ul > li > ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: yellowgreen;
+    left: 160px;
+}
+.topMenu > li > ul > li:hover > ul {
+    display: inline-block;
+}
+.topMenu > li > ul > li > ul > li {
+    padding: 20px 0px 20px 0;
+}
+.topMenu > li > ul > li > ul > li > a {
+    font-size: 13px;
+    color: white;
+}
